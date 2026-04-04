@@ -1,0 +1,42 @@
+# OS artifacts
+.DS_Store
+nvm-exec
+nvm.sh
+
+# Logs
+*.log
+logs/
+
+# Python
+__pycache__/
+*.py[cod]
+.python-version
+.venv/
+env/
+venv/
+.env
+
+# Pytest
+.pytest_cache/
+
+# SQLite
+*.db
+*.db-shm
+*.db-wal
+
+# Node / Frontend
+node_modules/
+dist/
+.vite/
+
+# User-local settings
+*.user
+*.suo
+*.swp
+
+# IDE
+.idea/
+.vscode/
+
+# System prompt
+AGENTS.md
