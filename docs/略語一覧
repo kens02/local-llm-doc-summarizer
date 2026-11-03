@@ -1,0 +1,104 @@
+---
+id: GLS-001
+title: 略語一覧
+区分: 用語集
+取扱区分: 汎用
+状態: ドラフト
+版: 0.1
+更新日: 2026-11-04
+関連: [GLS-002 用語集, STD-001 ドキュメント保存要領]
+---
+
+# 略語一覧
+
+## 0. 運用ルール
+- 資料中の略語は、文書内の初出時に「正式名称（略語）」と併記する
+- 本一覧にない略語を使う場合は、先に本一覧へ追加する
+- 状態：確定＝合意済／仮＝本チーム内の仮定義／要確認＝顧客・社内の呼称と照合が必要
+- 別表記：同じ意味で使われうる表記。統一表記は「略語」欄とする
+
+## 1. 資料体系のID接頭辞（本プロジェクト独自）
+| 略語 | 正式名称 | 意味・使い方 | 状態 |
+|---|---|---|---|
+| STD | Standard | 第1層 開発標準 | 仮 |
+| ENV | Environment | 第2層 環境構築・運用資料（構成図・構築手順・運用要領） | 仮 |
+| GDE | Guide | 第3層 開発者ガイド | 仮 |
+| GLS | Glossary | 用語集・略語一覧 | 仮 |
+| TOOL | Tool | 構成要素一覧（ツール台帳）の構成要素 | 仮 |
+| UC | Use Case | ユースケース。ツール台帳と試験シナリオをつなぐ単位 | 仮 |
+| SCN | Scenario | 試験シナリオ一覧の各シナリオ | 仮 |
+| EVD | Evidence | 試験シナリオの実施結果・検証記録 | 仮 |
+| PRM | Prompt | プロンプト（ツール非依存の本文） | 仮 |
+| TPL | Template | テンプレート（設計書・試験記録等のひな形） | 仮 |
+| RUL | Rule | AIエージェント用ルールの共通本文 | 仮 |
+| ISS | Issue | 課題 | 仮 |
+| DEC | Decision | 意思決定（合意事項） | 仮 |
+
+## 2. 工程（顧客・社内の呼称と要照合）
+| 略語 | 正式名称 | 意味・使い方 | 別表記 | 状態 |
+|---|---|---|---|---|
+| RD | Requirements Definition | 要件定義 | 要求定義 | 要確認 |
+| BD | Basic Design | 基本設計 | 外部設計、方式設計 | 要確認 |
+| DD | Detail Design | 詳細設計 | 内部設計 | 要確認 |
+| PG | Programming | 製造（コーディング） | CD、実装、コーディング | 要確認 |
+| UT | Unit Test | 単体試験 | 単体テスト、UT | 要確認 |
+| IT | Integration Test | 結合試験 | 結合テスト | 要確認 |
+| ST | System Test | 総合試験 | システムテスト | 要確認 |
+| CR | Code Review | コードレビュー | レビュー | 仮 |
+
+## 3. AI関連
+| 略語 | 正式名称 | 意味・使い方 | 別表記 | 状態 |
+|---|---|---|---|---|
+| AI | Artificial Intelligence | 人工知能。本資料では主に生成AIを指す | 生成AI | 確定 |
+| LLM | Large Language Model | 大規模言語モデル。チャット・コーディング支援の中核 | モデル | 確定 |
+| RAG | Retrieval-Augmented Generation | 検索拡張生成。文書を検索し回答の根拠に使う仕組み | 文書検索AI | 確定 |
+| MCP | Model Context Protocol | AIエージェントと外部ツールを接続する共通規格 | ― | 確定 |
+| GPU | Graphics Processing Unit | LLMの推論に使う演算装置 | ― | 確定 |
+| VRAM | Video RAM | GPU搭載メモリ。動かせるモデル規模を決める主要因 | GPUメモリ | 確定 |
+| GGUF | （ファイル形式名） | ローカル実行向けモデルの保存形式 | ― | 確定 |
+| ― | 自律修正ループ | AIがテスト実行→失敗→再修正を繰り返す動作 | エージェントループ | 仮 |
+
+## 4. 開発・構成管理
+| 略語 | 正式名称 | 意味・使い方 | 別表記 | 状態 |
+|---|---|---|---|---|
+| IDE | Integrated Development Environment | 統合開発環境（VS Code等） | エディタ | 確定 |
+| CLI | Command Line Interface | コマンドで操作する画面 | コマンドライン | 確定 |
+| API | Application Programming Interface | プログラム同士の接続口 | ― | 確定 |
+| CI/CD | Continuous Integration / Continuous Delivery | 自動ビルド・自動試験・自動配置の仕組み | CI、パイプライン | 確定 |
+| MR | Merge Request | GitLabでの変更取り込み依頼（レビュー単位） | PR（GitHubでの呼称） | 確定 |
+| VCS | Version Control System | 版管理システム（Git等） | 構成管理 | 確定 |
+| UML | Unified Modeling Language | 設計図の標準記法 | ― | 確定 |
+| OSS | Open Source Software | オープンソースソフトウェア | ― | 確定 |
+| SBOM | Software Bill of Materials | ソフトウェア部品表。出自・ライセンス確認に使う | 部品表 | 確定 |
+| CVE | Common Vulnerabilities and Exposures | 公開脆弱性の識別番号 | ― | 確定 |
+| md | Markdown | 本資料の正本形式 | MD | 確定 |
+| docx | Word文書形式 | Pandocで変換する提出用形式 | Word | 確定 |
+
+## 5. セキュリティ・基盤
+| 略語 | 正式名称 | 意味・使い方 | 別表記 | 状態 |
+|---|---|---|---|---|
+| ― | 閉域網 | 外部（インターネット）と通信しないネットワーク | クローズド環境、オフライン環境 | 確定 |
+| ― | オンプレミス | 自組織内に設置したサーバーで運用する形態 | オンプレ | 確定 |
+| SaaS | Software as a Service | 外部提供のクラウドサービス（本案件では原則不可） | クラウドサービス | 確定 |
+| AD | Active Directory | Windows系の認証基盤 | ― | 要確認 |
+| LDAP | Lightweight Directory Access Protocol | 認証情報の参照方式 | ― | 確定 |
+| SSO | Single Sign-On | 一度の認証で複数ツールを利用 | ― | 確定 |
+| RBAC | Role-Based Access Control | 役割に応じた権限制御 | ロール権限 | 確定 |
+
+## 6. プロジェクト管理
+| 略語 | 正式名称 | 意味・使い方 | 別表記 | 状態 |
+|---|---|---|---|---|
+| PM | Project Manager | プロジェクト責任者 | ― | 確定 |
+| PL | Project Leader | 工程・チームの取りまとめ | ― | 確定 |
+| TL | Team Leader | チームリーダー | リーダー | 確定 |
+| SES | System Engineering Service | 技術者の常駐型役務契約 | ― | 確定 |
+| WBS | Work Breakdown Structure | 作業分解構成図 | 作業一覧 | 確定 |
+| PoC | Proof of Concept | 概念実証・小規模検証 | 検証 | 確定 |
+| KPI | Key Performance Indicator | 効率化の評価指標（未合意） | 指標 | 要確認 |
+| QCD | Quality, Cost, Delivery | 品質・コスト・納期 | ― | 確定 |
+| TBD | To Be Determined | 未定。期限・担当とセットで使う | 未定 | 確定 |
+
+## 7. 改版履歴
+| 版 | 日付 | 内容 |
+|---|---|---|
+| 0.1 | 2026-11-04 | 初版ドラフト |
